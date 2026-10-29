@@ -5,9 +5,15 @@
 
 Protótipo acadêmico de terminal para preparar **configurações fotográficas simuladas antes da captura**, com decisões por regras, consulta real à Open-Meteo e histórico em JSON. Não utiliza IA, classes, câmera, voz, Flask ou FastAPI. Não depende do projeto web.
 
-## Identificação da equipe
+## Integrantes
 
-A identificação nominal e os RMs estão no pacote local de entrega. A publicação desses dados e do PDF no repositório público está pendente de autorização.
+| Integrante | RM |
+|---|---|
+| Daniel Roberto Ribeiro de Figueiredo | 571746 |
+| Felipe Rossano Pedrol | 569631 |
+| Felipi Bandeira de Godoy | 573741 |
+| Jecky Cossio | 572226 |
+| Leonardo Ferreira Barbosa | 571311 |
 
 ## Executar no Windows / PyCharm
 
@@ -38,7 +44,7 @@ Não há prompt de IA: assuntos e condições são escolhidos em categorias. Ape
 
 ## Regras e limites
 
-As regras refletem os cenários do projeto: slide projetado, documento, retrato, grupo e paisagem. Consulte [a documentação técnica](docs/ESPECIFICACAO.md) e o PDF incluído no pacote de entrega.
+As regras refletem os cenários do projeto: slide projetado, documento, retrato, grupo e paisagem. Consulte [a documentação técnica](docs/ESPECIFICACAO.md) e [o PDF](docs/JOVI_AI_Sprint4_Documentacao.pdf).
 
 - Preparação exclusivamente **pré-captura e automática simulada**, sem tutorial de ajuste manual ou análise pós-foto.
 - Perfis completo/básico são **fictícios**, não especificações de um aparelho JOVI. Recursos indisponíveis usam alternativa Foto e mensagem explícita.
@@ -76,7 +82,7 @@ regras.py            Tabela de decisões e perfis simulados
 clima.py             Requisições e validação da Open-Meteo
 persistencia.py      JSON, datas e registros
 requirements.txt     Única dependência externa: requests
-docs/                Especificação e relatório de validação (PDF no pacote de entrega)
+docs/                Especificação, PDF e relatório de validação
 tests/verificar.py   Verificações automatizadas sem classes
 dados/               Criada na primeira gravação; histórico local não versionado
 ```
