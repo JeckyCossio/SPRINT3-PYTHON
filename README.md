@@ -44,7 +44,7 @@ Não há prompt de IA: assuntos e condições são escolhidos em categorias. Ape
 
 ## Regras e limites
 
-As regras refletem os cenários do projeto: slide projetado, documento, retrato, grupo e paisagem. Consulte [a documentação técnica](docs/ESPECIFICACAO.md) e [o PDF](docs/JOVI_AI_Sprint4_Documentacao.pdf).
+As regras refletem os cenários do projeto: slide projetado, documento, retrato, grupo e paisagem. Consulte [a documentação técnica](docs/ESPECIFICACAO.md). Os arquivos Word e PDF são entregues separadamente no chat.
 
 - Preparação exclusivamente **pré-captura e automática simulada**, sem tutorial de ajuste manual ou análise pós-foto.
 - Perfis completo/básico são **fictícios**, não especificações de um aparelho JOVI. Recursos indisponíveis usam alternativa Foto e mensagem explícita.
@@ -82,7 +82,7 @@ regras.py            Tabela de decisões e perfis simulados
 clima.py             Requisições e validação da Open-Meteo
 persistencia.py      JSON, datas e registros
 requirements.txt     Única dependência externa: requests
-docs/                Especificação, PDF e relatório de validação
+docs/                Especificação e relatório de validação
 tests/verificar.py   Verificações automatizadas sem classes
 dados/               Criada na primeira gravação; histórico local não versionado
 ```
@@ -97,6 +97,6 @@ Os testes usam recursos nativos do Python e `requests`, sem instalar bibliotecas
 
 ## Entrega e evolução
 
-Entregar via Teams **um único ZIP contendo PDF e código-fonte**. README, testes e especificação são complementos. Não é necessário instalar ferramentas para gerar PDF: ele já está pronto.
+Entregar via Teams **um único ZIP contendo PDF e código-fonte**. README, testes e especificação são complementos. O Word e o PDF da documentação são fornecidos no chat, fora do repositório; inclua o PDF no ZIP final de entrega.
 
 A branch `sprint4` evolui a Sprint 3; a `main` permanece como referência da versão anterior, sem merge automático. Foram retirados modo guiado, feedback pós-foto e notas aleatórias; foram acrescentados regras pré-captura, API real, JSON e documentação. A integração com outras disciplinas foi dispensada pela professora, conforme orientação informada pela equipe nesta construção. Persistência JSON não é apresentada como integração web.
